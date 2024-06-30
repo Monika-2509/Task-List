@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./img/faviocon.png">
+    <title>Task List</title>
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card" id="main">
+                    <div class="card-content">
+                        <span class="card-title">Task List</span>
+                        <div class="row">
+                            <form id="task-form">
+                                <div class="input-field col s12">
+                                    <input type="text" id="task" name="task">
+                                    <label for="task">New Task</label>
+                                </div>
+                                <input type="submit" value="Add Task" class="btn purple">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <h5 class="test" id="task-title">
+                            Tasks
+                        </h5>
+
+                        <div>
+                            <input placeholder="Search" id="search" type="text">
+                        </div>
+                        <ul class="collection">
+                            <li class="collection-item">
+                                Welcome to your task hub—let's get things done efficiently!
+                                <a href="#!" class="delete-item secondary-content"><i class="fa fa-remove"></i></a>
+                                
+                            </li>
+                            <li class="collection-item hidden alert">
+                                No Records Found
+                                <a href="#!" class="delete-item secondary-content"><i class="fa fa-remove"></i></a>
+                                
+                            </li>
+                        </ul>
+                        <a href="#" class="clear-tasks btn black" id="btn-test">Clear Tasks</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./javascript/app.js"></script>
+
+</body>
+
+</html>
