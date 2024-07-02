@@ -79,8 +79,10 @@ function addTask(Event) {
 }
 function removeItem(event) {
     if (event.target.tagName === 'I') {
+        if(confirm("Are You Sure?")){
         removeStorage(event.target.parentElement.parentElement.textContent);
         event.target.parentElement.parentElement.remove();
+        }
     }
 
 }
